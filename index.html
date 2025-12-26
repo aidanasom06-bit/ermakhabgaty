@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="kz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Black Eagles FC</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">🦅 BLACK EAGLES</div>
+  <nav>
+    <a href="#about" data-key="club">Клуб</a>
+    <a href="#players" data-key="squad">Құрам</a>
+    <a href="#matches" data-key="matches">Матчтар</a>
+    <a href="#tickets" data-key="tickets">Билет</a>
+    <a href="#shop" data-key="shop">Shop</a>
+  </nav>
+  <div class="lang-switch">
+    <button onclick="setLang('kz')">KZ</button>
+    <button onclick="setLang('en')">EN</button>
+    <button onclick="setLang('ru')">RU</button>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>BLACK EAGLES FC</h1>
+  <p data-key="elite">ELITE FOOTBALL CLUB</p>
+</section>
+
+<section id="about" class="section">
+  <h2 data-key="club">Клуб философиясы</h2>
+  <p data-key="clubText">
+    Black Eagles FC — тәртіп, күш және жеңіске деген аштық.
+  </p>
+</section>
+
+<section id="players" class="section dark">
+  <h2 data-key="squad">Негізгі құрам</h2>
+  <div class="grid">
+    <div class="card"><img src="erma/ct.jpg"><h3>Аян</h3><span>FW</span></div>
+    <div class="card"><img src="erma/df.jpg"><h3>Нұрбек</h3><span>DF</span></div>
+    <div class="card"><img src="erma/gk.jpg"><h3>Данияр</h3><span>GK</span></div>
+  </div>
+</section>
+
+<section id="matches" class="section">
+  <h2 data-key="matches">Алдағы матчтар</h2>
+  <ul class="matches">
+    <li>Black Eagles vs Falcons — 12.01.2025</li>
+    <li>Black Eagles vs Wolves — 19.01.2025</li>
+  </ul>
+</section>
+
+<section id="tickets" class="section dark">
+  <h2 data-key="tickets">Билет сату</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Black Eagles vs Falcons</h3>
+      <p>💺 Standard — 3000 ₸</p>
+      <button onclick="buyTicket('Black Eagles vs Falcons',3000)" data-key="buy">
+        Сатып алу
+      </button>
+    </div>
+    <div class="card">
+      <h3>Black Eagles vs Wolves</h3>
+      <p>💺 VIP — 8000 ₸</p>
+      <button onclick="buyTicket('Black Eagles vs Wolves',8000)" data-key="buy">
+        Сатып алу
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="shop" class="section">
+  <h2 data-key="shop">Club Store</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="erma/h.jpg">
+      <h3>Home Kit</h3>
+      <button onclick="order('Home Kit')" data-key="buy">BUY</button>
+    </div>
+    <div class="card">
+      <img src="erma/g.jpg">
+      <h3>Away Kit</h3>
+      <button onclick="order('Away Kit')" data-key="buy">BUY</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 BLACK EAGLES FC
+</footer>
+
+<script src="script.jsf"></script>
+</body>
+</html>
